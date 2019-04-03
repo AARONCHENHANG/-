@@ -11,6 +11,16 @@
   <packaging>war</packaging>  
   <properties> 
     <!-- 覆盖父工程中的 port 属性 -->  
-    <port>9101</port> 
-  </properties> 
+    <port>9101</port>
+
+
+  </properties>
+  <dependencies>
+    <!-- 配置分页插件 -->
+
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+    </dependency>
+  </dependencies>
 </project>
