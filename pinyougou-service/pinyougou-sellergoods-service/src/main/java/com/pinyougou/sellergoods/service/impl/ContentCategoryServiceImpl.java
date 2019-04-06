@@ -1,5 +1,4 @@
-package com.pinyougou.service.impl;
-
+package com.pinyougou.sellergoods.service.impl;
 import com.pinyougou.pojo.ContentCategory;
 import com.pinyougou.mapper.ContentCategoryMapper;
 import com.pinyougou.service.ContentCategoryService;

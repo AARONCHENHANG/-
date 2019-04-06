@@ -26,65 +26,35 @@ public class BrandServiceImpl implements BrandService{
     @Autowired
     private BrandMapper brandMapper;
 
-    /** 添加方法 */
-    public void save(Brand brand){
-        try {
-            brandMapper.insertSelective(brand);
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+
+    @Override
+    public void save(Brand brand) {
+        brandMapper.insertSelective(brand);
     }
 
-    /** 修改方法 */
-    public void update(Brand brand){
-        try {
-            brandMapper.updateByPrimaryKeySelective(brand);
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    @Override
+    public void update(Brand brand) {
+        brandMapper.updateByPrimaryKeySelective(brand);
     }
 
-    /** 根据主键id删除 */
-    public void delete(Serializable id){
-        try {
-            brandMapper.deleteByPrimaryKey(id);
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    @Override
+    public void delete(Serializable id) {
+
     }
 
-    /** 批量删除 */
-    public void deleteAll(Serializable[] ids){
-        try {
-            // 创建示范对象
-            Example example = new Example(Brand.class);
-            // 创建条件对象
-            Example.Criteria criteria = example.createCriteria();
-            // 创建In条件
-            criteria.andIn("id", Arrays.asList(ids));
-            // 根据示范对象删除
-            brandMapper.deleteByExample(example);
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    @Override
+    public void deleteAll(Serializable[] ids) {
+
     }
 
-    /** 根据主键id查询 */
-    public Brand findOne(Serializable id){
-        try {
-            return brandMapper.selectByPrimaryKey(id);
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    @Override
+    public Brand findOne(Serializable id) {
+        return null;
     }
 
-    /** 查询全部 */
-    public List<Brand> findAll(){
-        try {
-            return brandMapper.selectAll();
-        }catch (Exception ex){
-            throw new RuntimeException(ex);
-        }
+    @Override
+    public List<Brand> findAll() {
+        return brandMapper.selectAll();
     }
 
     /** 多条件分页查询 */

@@ -1,5 +1,4 @@
-package com.pinyougou.service.impl;
-
+package com.pinyougou.sellergoods.service.impl;
 import com.pinyougou.pojo.GoodsDesc;
 import com.pinyougou.mapper.GoodsDescMapper;
 import com.pinyougou.service.GoodsDescService;

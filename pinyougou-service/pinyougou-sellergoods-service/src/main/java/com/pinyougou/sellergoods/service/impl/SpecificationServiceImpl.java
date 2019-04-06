@@ -1,4 +1,4 @@
-package com.pinyougou.service.impl;
+package com.pinyougou.sellergoods.service.impl;
 
 import com.pinyougou.pojo.Specification;
 import com.pinyougou.mapper.SpecificationMapper;

@@ -11,10 +11,5 @@ import java.util.List;
  */
 public interface BrandMapper extends Mapper<Brand>{
 
-    /**
-     * 查询所有品牌
-     * @return
-     */
-    @Select("select * from tb_brand order by id asc")
-    public List<Brand> findAllBrand();
+
 }
